@@ -1,4 +1,6 @@
-const { readFile, writeFile } = require('fs')
+const { readFile, writeFile } = require('fs') //Drags out redfileSync function and writeFileSync function from module 'fs'
+//Since we have declared no var name to access these functions,
+//this simply imports the functions to our .js file.
 
 console.log('start')
 readFile('./content/first.txt', 'utf8', (err, result) => {
